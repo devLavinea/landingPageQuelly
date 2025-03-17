@@ -61,7 +61,7 @@ header{
         display: block;
         border: none;
         background-color: transparent;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         cursor: pointer;
         color: var(--color-neutral-0);
         
@@ -83,6 +83,7 @@ header{
         flex-direction: column;
         gap: 15px;
         margin: 12px 0px 20px 0px;
+        font-size: 1.3rem;
         
     }
 
@@ -92,10 +93,3 @@ header{
     }
 }
 
-@media screen and (max-width: 480px) { 
-    #mobile_btn{
-        font-size: 1.7rem;
-       
-        
-    }
-}

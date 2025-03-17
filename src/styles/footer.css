@@ -117,7 +117,7 @@ footer{
   }
 
   #shade {
-    width: 65%;
+    width: 63%;
     height: 17%;
   }
 
@@ -126,8 +126,8 @@ footer{
   }
   footer h2{
     color: var(--color-neutral-0);
-    margin-left: 7%;
-    font-size: 1.7rem;
+    margin-left: 5%;
+    font-size: 1.5rem;
     margin-bottom: 40px;
     
   }
@@ -137,19 +137,3 @@ footer{
 
 }
 
-
-@media screen and (max-width: 480px) {
-  footer h2{
-  
-    margin-left: 5%;
-    font-size: 1.5rem;
-    
-    
-  }
-
-  
-  #shade {
-    width: 70%;
-}
-
-}
