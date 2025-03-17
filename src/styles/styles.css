@@ -92,6 +92,7 @@ a{text-decoration: none;}
     position: relative;
     width: 100%;
     height: auto;
+    text-align: start;
   }
 
   .swiper-button-next::after,

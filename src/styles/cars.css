@@ -84,5 +84,13 @@
   }
 
 
+  
+@media screen and (max-width: 480px) {
+
+    .car{
+        border-radius: 10px;
+    }
+}
+
 
  

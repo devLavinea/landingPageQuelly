@@ -51,5 +51,14 @@
     
     .service{
         width: 80%;
+        
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+
+    .service p{
+        font-size: 1.3rem;
     }
 }
