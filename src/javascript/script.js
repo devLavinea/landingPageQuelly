@@ -59,57 +59,62 @@ $(document).ready(function(){
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  slidesPerView: 3, // Quantidade de slides visíveis ao mesmo tempo
-  slidesPerGroup: 1, // Número de slides que irão avançar por vez
-  loopAdditionalSlides: 3, 
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-      480: {
-          slidesPerView: 1,
-          spaceBetween: 20
-      },
-      700: {
-          slidesPerView: 2,
-          spaceBetween: 20
-      },
-      1000: {
-          slidesPerView: 3,
-          spaceBetween: 20
-      }
-  }
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-  loop: true,
-  slidesPerView: 3, // Quantidade de slides visíveis ao mesmo tempo
-  slidesPerGroup: 1, // Número de slides que irão avançar por vez
-  loopAdditionalSlides: 3, 
+var swiper1 = new Swiper(".mySwiper1", {
+    observer: true,
+    observeParents: true,
   
-  navigation: {
+    navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-      480: {
-          slidesPerView: 1,
-          spaceBetween: 10
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      400: {
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
+      // when window width is >= 480px
       600: {
-          slidesPerView: 2,
-          spaceBetween: 10
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      900: {
-          slidesPerView: 3,
-          spaceBetween: 10
+      // when window width is >= 480px
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
-      1270: {
-          slidesPerView: 4,
-          spaceBetween: 10
-      }
-  }
-});
+    },
+  });
+  
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    observer: true,
+    observeParents: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      400: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      // when window width is >= 480px
+      550: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      // when window width is >= 480px
+      800: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      // when window width is >= 640px
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+    },
+  });
